@@ -49,7 +49,7 @@ class TriangleClassifier {
 	        return a + b > c && b + c > b && b + c > a && a == b && b == c && a==c;
 	    }
 	    private static boolean isNotTriangle(int a, int b, int c) { 
-	        return !(a + b > c && a + c > b && b + c > a);
+	        return  a>0 && b>0 && c>0 && !(a + b > c && a + c > b && b + c > a);
 	    }
 	    private static boolean isScalene(int a, int b, int c) {
 	        return (a + b > c && a + c > b && b + c > a) && (a!=b && a!=c && b!=c);  

@@ -59,8 +59,8 @@ public class AppTest {
 	//test
 	@Test
 	public void ErrorTriangle(){
-        int a = -7;
-        int b = -1;
+        int a = -8;
+        int b = -2;
         int c = -5;
         triangle.classifyTriangle(a,b,c);
         String expected =Triangle_Types.ERROR.toString();
